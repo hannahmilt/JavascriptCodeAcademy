@@ -41,3 +41,64 @@ if(mood==="sleepy"&&tirednessLevel >8) {
 }
 
 //Truthy and Falsy
+	//Checking if variable exists/assigned a value
+
+let myVariable = "I Exist";
+if (myVariable) {
+	console.log(myVariable)
+}else {
+	console.log("The variable does no exist.")
+}
+	//the code block in the if statement will run because my Variable is not explicitly the value true, it evaluates to true
+	// because it has been assigned a non-falsy value
+//When values are falsy -- or evaluate to false. List of values includes: 0, empty strings"", null, undefined, NaN (Not a Number)
+
+let numberOfApples = 0;
+
+if (numberOfApples){
+	console.log("Let us eat apples!");
+}else{}
+console.log("No apples left!");
+
+//Example
+	//Change the value of wordCount so that it is truthy
+let wordCount=61;
+if(wordCount){
+	console.log("Great! You've started your work!");
+}else{
+	console.log("Better get to work!");
+}
+
+	//change value of favoritePhrase so that it is still a string but falsy
+let favoritePhrase="";
+if(favoritePhrase){
+	console.log("This string doesn't seem to be empty");
+}else{
+	console.log("This string is definitely empty");
+}
+
+//Have website that makes personalized greeting. Sometimes the used does not have an account, making the username variable falsy
+//the code below checks if the username is defined and assigns a default string if it is not:
+let username = ""; //this line is not included in example put it because it breaks
+// let defaultName;
+// if (username){
+// 	defaultName = username;
+// }else{
+// 	defaultName = "Stranger";
+// }
+	//short-hang for the code above
+let defaultName = username || "Stranger";
+//because || checks the left-hang condition first, the variable defaultName will be assigned the actual value of username if
+// it is truthy and with be assigned the value of "Stranger" if user name is falsy
+// Also called short-circuit evaluation
+
+//Example
+//Use short-circuit evaluation to assign a value to writingUtensil the value of toll and if tool is falsey, assign a default
+// value of pen.
+
+let tool ="";
+let writingUtensil = tool || "pen";
+console.log("The ${writingUtensil} is mightier than the sword");
+//for some reason the variable is not being called right in middle of sentence
+
+//Ternary Operator
