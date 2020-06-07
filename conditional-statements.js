@@ -102,3 +102,34 @@ console.log("The ${writingUtensil} is mightier than the sword");
 //for some reason the variable is not being called right in middle of sentence
 
 //Ternary Operator
+ //can use ternary operator to simplify an if ...else statement
+//if else example
+let isNightTime=true;
+if (isNightTime){
+	console.log("Turn off the lights!");
+}else{
+	console.log("Turn off the lights!");
+}
+
+		//ternary operator example
+isNightTime ? console.log("Turn off the lights") : console.log("Turn off the lights!");
+		//The condition isNightTime is provided before the ?
+		//RTwo expressions follow the ? and are separated by a colon :
+		//If the condition evaluates to tur, the first expression executes
+		//If the condition evaluated to false, the second expression executes.
+		//ternary operators can be used for conditions which evaluate to true of false
+
+		//examples
+let isLocked = false;
+
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+
+let isCorrect = true;
+
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+
+
+let favoritePhrase1 = 'Love That!';
+
+favoritePhrase1 === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
