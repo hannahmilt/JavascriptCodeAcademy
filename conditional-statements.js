@@ -133,3 +133,71 @@ isCorrect ? console.log('Correct!') : console.log('Incorrect!');
 let favoritePhrase1 = 'Love That!';
 
 favoritePhrase1 === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+
+//Else If Statements
+		//Can add more conditions to our if ...else with else if statement.
+		//example
+let stopLight = "yellow";
+if (stopLight === "red"){
+	console.log("Stop");
+}else if (stopLight === "yellow") {
+	console.log ('Slow Down')
+}else if (stopLight === "green") {
+	console.log("Go");
+}else{
+	console.log("Caution, unknown!");
+}
+		//Another example
+let season = 'summer';
+
+if (season === 'spring') {
+	console.log('It\'s spring! The trees are budding!');
+} else if(season === "winter"){
+	console.log("It\'s winter! Everything is covered in snow.")
+}else if (season === "fall"){
+	console.log("It\'s fall! Leaves are falling!")}else if (season === "summer"){
+	console.log("It\'s sunny and warm because it\'s summer!")
+}else {
+	console.log('Invalid season.');
+}
+
+//The Switch Keyword
+		//Example
+let groceryItem ="papaya";
+switch(groceryItem){
+	case "tomato":
+		console.log("Tomatoes are $.49");
+		break;
+	case "lime":
+		console.log("Limes are $1.49");
+		break;
+	case "papaya":
+		console.log("Papayas are $1.29");
+		break;
+	default:
+		console.log("Invalid item");
+		break;
+}
+		//switch keyword initiates the statement and is followed by (), which contain the value that each case will compare.
+		//Inside {} there are multiple cases. the case keyword checks if the expression matches the specified value that comes
+// after it.
+		//break keyword tells the computer to exit the block and not execute anymore code
+		//At end of each switch statement there is a default statement. If non of the cases are true then the code in the default
+// statement will run.
+//Example
+let athleteFinalPosition = 'first place';
+
+switch(athleteFinalPosition){
+	case "first place":
+		console.log("You get the gold medal!");
+		break;
+	case "second place":
+		console.log("You get the silver medal!");
+		break;
+	case "third place":
+		console.log("You get the bronze medal!");
+		break;
+	default:
+		console.log("No medal awarded.");
+		break;
+}
